@@ -1,0 +1,141 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=0.6in,right=0.6in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage[none]{hyphenat}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black
+}
+
+\setmainfont{Latin Modern Sans}
+
+\definecolor{darkgray}{RGB}{40,40,40}
+\pagestyle{empty}
+
+% Section formatting: centered bold caps with rules above/below
+\titleformat{\section}{\centering\bfseries\large}{}{0em}{}
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+\newcommand{\sectionrule}{\noindent\rule{\textwidth}{0.8pt}}
+
+\newcommand{\entrytitle}[2]{%
+  \noindent\textbf{#1} \hfill #2\\
+}
+
+\newcommand{\entrysub}[1]{%
+  \textit{#1}\\
+}
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+  {\fontsize{28}{30}\selectfont \textbf{K H I L F I \ N A Z A R U D I N}}\\[1pt]
+  \small \href{https://www.linkedin.com/in/mohamed-khilfi}{www.linkedin.com/in/mohamed-khilfi}
+\end{center}
+\sectionrule
+
+% ---------- EDUCATION ----------
+\section*{EDUCATION}
+\vspace{2pt}
+ 
+\entrytitle{Nanyang Polytechnic}{April 2020 -- April 2023}
+\vspace{-8pt}
+\begin{itemize}[itemsep=0pt, topsep=2pt, parsep=0pt]
+  \item Diploma in Infocomm and Media Engineering
+  \item Awarded Director's List and Edusave Award: Y1S1, Y1S2, Y2S1, Y3S1
+\end{itemize}
+ 
+\vspace{4pt}
+\entrytitle{Digipen / Singapore Institute of Technology}{Sept 2025 -- Sept 2029}
+\begin{itemize}[itemsep=0pt, topsep=2pt, parsep=0pt]
+  \item Bachelor's degree in Computer Science in Real Time Interactive Simulation
+\end{itemize}
+\sectionrule
+
+% ---------- TECHNICAL SKILLS ----------
+\section*{TECHNICAL SKILLS}
+\vspace{2pt}
+\begin{itemize}
+  \item Experienced in C++ software development and OpenGL graphics programming
+  \item Experienced in wireframe design, product requirements gathering, and full-stack prototyping using both Agile and Waterfall methodologies
+  \item Developed multiple Flutter mobile applications, several integrated with Firebase for backend, authentication, and real-time data
+  \item Familiar with JavaScript, TypeScript, Java, Python, PHP, Node.js, MongoDB, and MySQL, gained through internships, school, and personal projects
+\end{itemize}
+
+\sectionrule
+
+% ---------- PROFESSIONAL EXPERIENCE ----------
+\section*{PROFESSIONAL EXPERIENCE}
+\vspace{2pt}
+
+\entrytitle{Home Team Science and Technology Agency (HTX)}{June 2025 -- August 2025}
+\entrysub{Frontend Prototype Developer and Planner}
+Worked on an AI-powered screening tool prototype for another government agency.
+
+\begin{itemize}
+  \item Created wireframes using \textbf{Lucidchart} for 2 core processes --- the UI workflow and the physical operations workflow --- mapping user journeys and emotional states
+  \item Defined product requirements from a Project Manager's perspective
+  \item Designed and developed 3 key UI sections of the application using \textbf{TypeScript}
+  \item Revamped the existing frontend prototype that corresponds with the user journey and experience from the product requirements
+  \item Presented the prototype to 3 stakeholders, receiving positive feedback for closely aligning with their requirements
+\end{itemize}
+
+\vspace{4pt}
+\entrytitle{Singapore Police Force (National Service)}{December 2024 -- May 2025}
+\entrysub{Full-Stack Developer and Operations Lead}
+Built a cross-platform dashboard Flutter prototype while conducting frontline MRT patrols and incident management
+
+\textit{Dashboard Project:}
+\begin{itemize}
+  \item Spearheaded an experimental full-stack data visualisation project supporting mobile, tablet, and desktop view for a specialised police division, developed iteratively using \textbf{Agile} methodology
+  \item Integrated \textbf{LTA DataMall API} to pull live station status and static emergency data, tested using \textbf{Postman}
+  \item Developed the \textbf{Flutter} frontend, handling report input forms and real-time visualisation of inputted incident reports
+  \item Integrated \textbf{Firebase} as backend for authentication, and cloud storage of images and incident reports
+  \item Collaborated with SPF for user requirements and HTX for spec requirements.
+\end{itemize}
+
+\textit{Frontline Operations:}
+\begin{itemize}
+  \item Managed rostering for a team of up to 90 personnel using \textbf{Microsoft Excel} for shift planning and \textbf{Microsoft Word} for coordinating sick leaves, time offs, and training schedules
+  \item Led a team of up to 5 members in MRT stations, handling incident management, commuter flow, and crowd control
+  \item Regularly managed conflict resolution and de-escalated tense situations involving teammates, members of the public, and other public sector workers
+  \item Documented incident reports and handover logs for shift accountability
+  \item Attained the \textit{Commander's Award} for developing the prototype while upholding frontline responsibilities
+\end{itemize}
+
+\vspace{4pt}
+\entrytitle{Monetary Authority of Singapore}{October 2022 -- April 2023}
+\entrysub{Software Engineer and Intern}
+Automated manual workflows as an intern, then returned as a full-time engineer handling IaC and AWS deployment.
+
+\begin{itemize}
+  \item Implemented Infrastructure as Code (IaC) using \textbf{Terragrunt} and \textbf{Terraform}
+  \item Managed \textbf{AWS EC2} for deployment of infrastructure and scripts
+  \item Automated manual jobs using \textbf{Python} --- including data scraping from \textbf{Bitbucket}
+\end{itemize}
+
+\sectionrule
+
+% ---------- EXTRA CURRICULAR RECORD ----------
+\section*{EXTRA CURRICULAR RECORD}
+\vspace{2pt}
+
+\entrytitle{Flutter Mentor}{January 2026 -- May 2026}
+Provided one-on-one mentorship on Flutter framework and app structure.
+
+\begin{itemize}
+  \item Helped mentee progress from basic \textbf{Dart} knowledge to a working Flutter prototype over a period of 4 months
+  \item Reviewed code, explained app architecture, and instilled good programming habits and best practices
+  \item Mentee successfully explained the code to the assessor and was awarded a final grade of \textbf{A-} for the module
+\end{itemize}
+
+\sectionrule
+\end{document}
